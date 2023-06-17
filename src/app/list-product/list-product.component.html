@@ -1,0 +1,36 @@
+<div class="container">
+  <h2>Quan ly san pham</h2>
+  <button><a routerLink="/product/add">Them</a></button>
+  <table class="table table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>STT</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Price</th>
+        <th>Quality</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody class="table-light">
+      <tr *ngFor="let product of products; index as i">
+        <td>{{ i + 1 }}</td>
+        <td>{{ product.name }}</td>
+        <td><img src="{{ product.image }}" /></td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.quality }}</td>
+        <td>{{ product.desc }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="removeProduct(product.id)">
+            Xoa
+          </button>
+          |
+          <button class="btn btn-success">
+            <a routerLink="/product/{{ product.id }}/edit">Sua</a>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

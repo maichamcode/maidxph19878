@@ -1,0 +1,35 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "product A update lai",
+      "image": "https://picsum.photos/200/200",
+      "price": 1,
+      "quality": 2,
+      "desc": "mota 1"
+    },
+    {
+      "name": "product B",
+      "image": "https://picsum.photos/200/200",
+      "price": 111,
+      "quality": 222,
+      "desc": "okok",
+      "id": 2
+    },
+    {
+      "name": "okok",
+      "image": "https://picsum.photos/200/200",
+      "price": 3213,
+      "quality": 213123,
+      "desc": "okok",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "email": "maiok123@gmail.com",
+      "password": "$2a$10$qMfWQ0iyXOSkEtVkch4vOeMoGIeqSZ3WVZgnnu34yma1u5GbUwkq.",
+      "id": 1
+    }
+  ]
+}
